@@ -23,7 +23,7 @@ function log(a: string) {
 }
 log('a', 10);
 
-// 함수 옵셔널 파라미터(optional parameter)
+// 함수 옵셔널 파라미터(optional parameter), 파라미터를 선택적으로 받을 수 있다.
 function printText(text: string, type?: string) {
   console.log(text);
 }
