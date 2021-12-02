@@ -14,16 +14,19 @@
     <header class="flex justify-center">
       <h1>코로나 세계 현황판</h1>
     </header>
+
     <main class="flex">
       <div class="left-panel flex column">
         <div class="total-board">
           <p>Total Confirmed</p>
           <span class="confirmed-total"></span>
         </div>
+
         <div class="country-ranks">
           <p>Confirmed Cases by Country</p>
           <ol class="rank-list"></ol>
         </div>
+
         <p class="last-updated-time flex justify-center align-center"></p>
       </div>
       <div class="right-panel">
@@ -35,6 +38,7 @@
               <ol class="deaths-list"></ol>
             </div>
           </div>
+
           <div class="recovered-container">
             <h3 class="summary-title">Total Recovered</h3>
             <p class="total recovered">0</p>
@@ -43,6 +47,7 @@
             </div>
           </div>
         </div>
+        
         <div class="chart-container">
           <canvas
             id="lineChart"
@@ -52,6 +57,7 @@
         </div>
       </div>
     </main>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="./app.js"></script>
