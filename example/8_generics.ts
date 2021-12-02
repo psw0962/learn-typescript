@@ -10,6 +10,7 @@ function getArray(value: string[]) {
 function getValue<T>(value: T): T {
   return value;
 }
+
 getValue('hi').toLocaleUpperCase();
 getValue(100).toLocaleString();
 
@@ -38,16 +39,18 @@ interface ShoppingItems {
   address: string;
   stock: number;
 }
+
 function getAllowedOptions<T extends keyof ShoppingItems>(option: T): T {
   if (option === 'name' || option === 'address') {
     console.log('option type is string');
     return option;
   }
+  
   if (option === 'price' || option === 'stock') {
     console.log('option type is number');
     return option;
   }
 }
-getAllowedOptions('nothing');
-// const a = getAllowedOptions('name');
-// a.toUpperCase(); // Name
+// getAllowedOptions('nothing');
+const a = getAllowedOptions('name');
+a.toUpperCase(); // Name
