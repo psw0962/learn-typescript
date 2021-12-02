@@ -14,21 +14,33 @@ function getUser(user: User) {
 getUser(seho);
 
 // 함수의 전체 타입에 사용하는 경우
-// interface SumFunction {
-//   (a: number, b: number): number;
-// }
-// let sum: SumFunction;
-// sum = function (num1: number, num2: string): number {
-//   return num1 + num2;
-// };
+interface SumFunction {
+  (a: number, b: number): number;
+}
+let sum: SumFunction;
+sum = function (num1: number, num2: string): number { // 인자에 대한 타입을 정의해 함수의 규칙을 만들 수 있다.
+  return num1 + num2;
+};
 
 // 배열의 인덱싱에 사용하는 경우
-// interface StringArray {
-//   [index: number]: string;
-// }
-// let arr: StringArray;
-// arr[0] = 'hi';
-// arr[1] = 10;
+interface StringArray {
+  [index: number]: string; 
+}
+let arr: StringArray;
+arr[0] = 'hi';
+arr[1] = 10;
+
+// 딕셔너리 패턴
+interface StringRegexDictionary {
+  [key: string]: RegExp; // value로 들어오는 타입에 대한 정의를 할 수 있다.
+}
+
+const obj: StringRegexDictionary = {
+  cssFile: /\.css$/,
+  jsFile: /\/js$/
+}
+
+obj['cssFile'] = 'a' // RegExp 타입이 들어와야 한다.
 
 // 인터페이스 확장
 interface Person {
