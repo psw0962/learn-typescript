@@ -5,7 +5,7 @@
         "outDir": "./built",
         "moduleResolution": "Node", // promise 인식
         "lib": ["ES2015", "DOM", "DOM.Iterable"],
-        "noImplicitAny": true // 
+        "noImplicitAny": true
     },
     "include": ["./src/**/*"] // src 폴더에 있는 파일을 tsc
 }
