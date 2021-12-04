@@ -1,11 +1,15 @@
 {
     "compilerOptions": {
         "allowJs": true, // js파일도 컴파일 가능
+        "module": "es6",
         "target": "ES5",
-        "outDir": "./built",
+        "outDir": "./dist",
         "moduleResolution": "Node", // promise 인식
         "lib": ["ES2015", "DOM", "DOM.Iterable"],
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "typeRoots": ["./node_modules/@types", "./types"], // 타입을 정의하지 않은 라이브러리 정의할 때 추론할 파일위치(두번째요소)
+        "strict": true,
     },
-    "include": ["./src/**/*"] // src 폴더에 있는 파일을 tsc
+    "include": ["./src/**/*", "webpack.config.js"] // src 폴더에 있는 파일을 tsc
 }

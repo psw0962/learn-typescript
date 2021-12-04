@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./main.css" />
   </head>
-  
+
   <body>
     <header class="flex justify-center">
       <h1>코로나 세계 현황판</h1>
@@ -25,7 +25,7 @@
 
         <div class="country-ranks">
           <p>Confirmed Cases by Country</p>
-          <ol class="rank-list"></ol>
+          <ol disabled class="rank-list"></ol>
         </div>
 
         <p class="last-updated-time flex justify-center align-center"></p>
@@ -61,6 +61,6 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="./app.js"></script>
+    <script type="module" src="./dist/app.js"></script>
   </body>
 </html>

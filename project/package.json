@@ -1,24 +1,35 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "## 자바스크립트 프로젝트에 타입스크립트 적용하기 1. 타입스크립트 기본 환경 구성     - NPM 초기화     - 타입스크립트 라이브러리 설치     - 타입스크립트 설정 파일 생성 및 기본 값 추가",
+  "type":"commonjs",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-typescript": "^7.16.0",
+    "@types/chart.js": "^2.9.34",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
+    "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.0",
-    "typescript": "^4.5.2"
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chart.js": "^3.6.1"
   }
 }
