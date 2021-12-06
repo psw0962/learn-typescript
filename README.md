@@ -1,22 +1,26 @@
-# learn-typescript
+## 코로나 세계 현황판 만들기
 
-## 개발 환경
+## 자바스크립트 프로젝트에 타입스크립트 적용하기
+1. 타입스크립트 기본 환경 구성
+    - [x] NPM 초기화
+    - [x] 타입스크립트 라이브러리 설치
+    - [x] 타입스크립트 설정 파일 생성 및 기본 값 추가
+    - [x] 자바스크립트 파일을 타입스크립트 파일로 변환
+    - [x] `tsc` 명령어로 타입스크립트 컴파일
 
-- [Chrome](https://www.google.com/intl/ko/chrome/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Node.js LTS 버전(v10.x 이상)](https://nodejs.org/ko/)
-- [Git](https://git-scm.com/downloads)
+2. 명시적인 `any` 선언하기
+    - [ ] `tsconfig.json` 파일에 `noImplicitAny` 값을 `true` 로 추가
+    - [ ] 가능한 구체적인 타입으로 타입 정의
 
-## VSCode 플러그인 목록
+3. 프로젝트 환경 구성
+    - babel, eslint, prettier 등의 환경 설정
 
-- 색 테마 : [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl)
-- 파일 아이콘 테마 : [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-- 문법 검사 : ESLint, [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
-- 실습 환경 보조 : [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- 기타
-  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager), [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag), [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens), [Atom Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings), [Jetbrains IDE Keymap](https://marketplace.visualstudio.com/items?itemName=isudox.vscode-jetbrains-keybindings) 등
+4. 외부 라이브러리 모듈화
 
-## License & Copyright
+5. `strict` 옵션 추가 후 타입 정의
 
-**Copyright © 2020 Captain Pangyo**
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.
+## 참고 자료
+
+- [존스 홉킨스 코로나 현황](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+- [Postman API](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#27454960-ea1c-4b91-a0b6-0468bb4e6712)
+- [Type Vue without Typescript](https://blog.usejournal.com/type-vue-without-typescript-b2b49210f0b)
