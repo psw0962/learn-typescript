@@ -11,7 +11,7 @@ function getValue<T>(value: T): T {
   return value;
 }
 
-getValue('hi').toLocaleUpperCase();
+getValue('hi').toLowerCase();
 getValue(100).toLocaleString();
 
 // 제네릭 기본 문법 - 인터페이스
@@ -51,6 +51,6 @@ function getAllowedOptions<T extends keyof ShoppingItems>(option: T): T {
     return option;
   }
 }
-// getAllowedOptions('nothing');
+getAllowedOptions('nothing');
 const a = getAllowedOptions('name');
 a.toUpperCase(); // Name

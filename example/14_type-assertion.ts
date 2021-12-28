@@ -8,4 +8,3 @@ let b = a as string;
 // DOM API 조작
 const div = document.querySelector('div') as HTMLDivElement;
 div.innerText
-
